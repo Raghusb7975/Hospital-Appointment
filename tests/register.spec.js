@@ -26,11 +26,11 @@ test('TC02 - Empty Form', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
-  // ✅ Specific validations (best)
+
   await expect(page.getByText('Phone number is required')).toBeVisible();
   await expect(page.getByText('Date of birth is required')).toBeVisible();
 
-  // ✅ Stay on same page
+
   await expect(page).toHaveURL(/register/);
 });
 
@@ -45,12 +45,12 @@ test('TC03 - Empty Name', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
-  // ✅ Exact validation message
+
   await expect(
     page.getByText('Name must be at least 2 characters')
   ).toBeVisible();
 
-  // ✅ Still on same page
+
   await expect(page).toHaveURL(/register/);
 });
 
@@ -71,7 +71,7 @@ test('TC04 - Successful Register redirects to Login', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
-  // ✅ Check redirected to login page
+  
   await expect(page).toHaveURL(/login/);
 });
 
@@ -93,12 +93,12 @@ test('TC5 - Existing Email shows error message', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
-  // ✅ Check error message (use partial to avoid strict issues)
+  
   await expect(
     page.getByText(/already|exists|email/i).first()
   ).toBeVisible();
 
-  // ✅ Ensure still on register page
+
   await expect(page).toHaveURL(/register/);
 });
 
@@ -114,7 +114,7 @@ test('TC6 - Invalid Phone Number shows validation message', async ({ page }) => 
   await page.getByRole('textbox', { name: 'Email address' }).fill(`manu${Date.now()}@gmail.com`);
   await page.getByRole('textbox', { name: 'Password' }).fill('Manu@12345');
 
-  // ❌ Invalid phone
+
   await page.getByRole('textbox', { name: 'Phone Number' }).fill('99');
 
   await page.getByRole('textbox', { name: 'Date of Birth' }).fill('2000-01-01');
@@ -124,12 +124,12 @@ test('TC6 - Invalid Phone Number shows validation message', async ({ page }) => 
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
-  // ✅ Check validation message (correct way)
+
   await expect(
     page.getByText(/Phone number is required/i)
   ).toBeVisible();
 
-  // ✅ Stay on same page
+
   await expect(page).toHaveURL(/register/);
 });
 
@@ -164,7 +164,6 @@ test('TC08 - Invalid Email Format', async ({ page }) => {
 
 await page.getByRole('button', { name: 'Create Account' }).click();
 
-// Check input validation state
 const emailInput = page.getByRole('textbox', { name: 'Email address' });
 
 await expect(emailInput).toHaveAttribute('type', 'email');
@@ -202,7 +201,7 @@ test('TC11 - DOB validation check', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
-  // ✅ Flexible locator
+
   await expect(
     page.locator('text=birth').first()
   ).toBeVisible();
@@ -224,7 +223,6 @@ test('TC - Successful registration shows success message', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
-  // ✅ Check success message (flexible)
   await expect(
     page.getByText(/success|account created|registered/i).first()
   ).toBeVisible();

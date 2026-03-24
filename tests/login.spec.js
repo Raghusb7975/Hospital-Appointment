@@ -18,10 +18,10 @@ test('TC2-Empty login validation', async ({ page }) => {
 //  Click login without entering data
   await page.locator('button[type="submit"]').click();
 
-  // ✅ Check still on same page
+ 
   await expect(page).toHaveURL(/login/);
 
-  // ✅ Optional: validate error messages
+
   await expect(page.getByText(/required/i)).toBeVisible();
 
 });
@@ -64,7 +64,7 @@ test('TC06 - Email Case Sensitivity', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
   await page.getByRole('button', { name: 'Sign In' }).click();
 
-  // ✅ Login should FAIL
+
   await expect(page).toHaveURL(/login/);
 });
 
@@ -107,7 +107,7 @@ test('TC09-Invalid pass shows error', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Sign In' }).click();
 
-  // ✅ Wait for error message (specific + stable)
+ 
   await expect(
   page.getByText('HTTP 401 : Invalid email or password').first()
 ).toBeVisible();
