@@ -1,0 +1,64 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /
+          - generic:
+            - img
+          - generic: MedBook
+        - generic:
+          - generic:
+            - heading [level=1]: Create your account
+            - paragraph: Join MedBook to start managing your healthcare journey.
+          - generic:
+            - generic:
+              - generic:
+                - text: Full Name
+                - textbox:
+                  - /placeholder: John Doe
+                  - text: Laxmi
+              - generic:
+                - text: Email address
+                - textbox:
+                  - /placeholder: name@example.com
+                  - text: laxmi1774331507327@gmail.com
+              - generic:
+                - text: Password
+                - textbox:
+                  - /placeholder: Create a strong password
+                  - text: Laxmi@123
+              - generic:
+                - text: Phone Number
+                - textbox:
+                  - /placeholder: +1 (555) 000-0000
+                  - text: "9876543210"
+              - generic:
+                - text: Date of Birth
+                - textbox: 2000-01-01
+              - generic:
+                - text: Gender
+                - combobox [expanded]:
+                  - generic: Select gender
+                  - img
+                - combobox
+            - button:
+              - img
+              - text: Create Account
+          - generic:
+            - text: Already have an account?
+            - link:
+              - /url: /login
+              - text: Log in instead
+    - list
+  - listbox [ref=e1]:
+    - option "Male" [active] [ref=e2]:
+      - generic [ref=e4]: Male
+    - option "Female" [ref=e5]:
+      - generic [ref=e7]: Female
+    - option "Other" [ref=e8]:
+      - generic [ref=e10]: Other
+```
