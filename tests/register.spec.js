@@ -227,3 +227,40 @@ test('TC - Successful registration shows success message', async ({ page }) => {
     page.getByText(/success|account created|registered/i).first()
   ).toBeVisible();
 });
+
+
+
+test('TC12 - Phone less than 10 digits', async ({ page }) => {
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/register');
+
+  await page.getByRole('textbox', { name: 'Phone Number' }).fill('12345');
+
+  await page.getByRole('button', { name: 'Create Account' }).click();
+
+  await expect(page.getByText(/phone/i).first()).toBeVisible();
+});
+
+
+test('TC13 - Invalid characters in name', async ({ page }) => {
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/register');
+
+  await page.getByRole('textbox', { name: 'Full Name' }).fill('@#$%');
+
+  await page.getByRole('button', { name: 'Create Account' }).click();
+
+  await expect(page.getByText(/name/i).first()).toBeVisible();
+});
+
+
+
+test('TC14 - Click "Log in instead" navigates to login', async ({ page }) => {
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/register');
+
+
+  await page.getByRole('link', { name: 'Log in instead' }).click();
+
+
+  await expect(page).toHaveURL(/login/);
+});
+
+
