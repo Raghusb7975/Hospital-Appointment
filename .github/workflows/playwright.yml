@@ -38,7 +38,7 @@ jobs:
       
     - name: Generate Allure Report
       if: always() # Runs regardless of test success/failure
-      run: npx allure generate allure-results -o allure-report --clean
+      run: allure generate allure-results -o allure-report --clean
       
     - name: Deploy to GitHub Pages
       if: always() # Runs regardless of test success/failure

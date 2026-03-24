@@ -1,0 +1,55 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - link "MedBook" [ref=e6] [cursor=pointer]:
+      - /url: /
+      - img [ref=e8]
+      - generic [ref=e11]: MedBook
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - heading "Create your account" [level=1] [ref=e14]
+        - paragraph [ref=e15]: Join MedBook to start managing your healthcare journey.
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - text: Full Name
+            - textbox "Full Name" [active] [ref=e19]:
+              - /placeholder: John Doe
+            - paragraph [ref=e20]: Name must be at least 2 characters
+          - generic [ref=e21]:
+            - text: Email address
+            - textbox "Email address" [ref=e22]:
+              - /placeholder: name@example.com
+            - paragraph [ref=e23]: Please enter a valid email address
+          - generic [ref=e24]:
+            - text: Password
+            - textbox "Password" [ref=e25]:
+              - /placeholder: Create a strong password
+            - paragraph [ref=e26]: Password must be at least 6 characters
+          - generic [ref=e27]:
+            - text: Phone Number
+            - textbox "Phone Number" [ref=e28]:
+              - /placeholder: +1 (555) 000-0000
+            - paragraph [ref=e29]: Phone number is required
+          - generic [ref=e30]:
+            - text: Date of Birth
+            - textbox "Date of Birth" [ref=e31]: 2030-01-01
+          - generic [ref=e32]:
+            - text: Gender
+            - combobox [ref=e33]:
+              - generic: Select gender
+              - img [ref=e34]
+            - combobox [ref=e36]
+            - paragraph [ref=e37]: Please select a gender
+        - button "Create Account" [ref=e38]:
+          - img
+          - text: Create Account
+      - generic [ref=e39]:
+        - text: Already have an account?
+        - link "Log in instead" [ref=e40] [cursor=pointer]:
+          - /url: /login
+  - region "Notifications (F8)":
+    - list
+```

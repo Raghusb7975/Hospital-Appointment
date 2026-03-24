@@ -12,7 +12,7 @@ test('TC01 - Valid Registration', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Date of Birth' }).fill('2000-01-01');
 
  await page.getByRole('combobox').click();
-await page.getByRole('option', { name: 'Male', exact: true }).click();
+ await page.getByRole('option', { name: 'Male', exact: true }).click();
 
   await page.getByRole('button', { name: 'Create Account' }).click();
 
