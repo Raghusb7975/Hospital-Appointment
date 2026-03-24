@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - link "MedBook" [ref=e6]:
+      - /url: /
+      - img [ref=e8]
+      - generic [ref=e11]: MedBook
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - heading "Create your account" [level=1] [ref=e14]
+        - paragraph [ref=e15]: Join MedBook to start managing your healthcare journey.
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - text: Full Name
+            - textbox "Full Name" [active] [ref=e19]:
+              - /placeholder: John Doe
+            - paragraph [ref=e20]: Name must be at least 2 characters
+          - generic [ref=e21]:
+            - text: Email address
+            - textbox "Email address" [ref=e22]:
+              - /placeholder: name@example.com
+              - text: test@gmail.com
+          - generic [ref=e23]:
+            - text: Password
+            - textbox "Password" [ref=e24]:
+              - /placeholder: Create a strong password
+              - text: Test@123
+          - generic [ref=e25]:
+            - text: Phone Number
+            - textbox "Phone Number" [ref=e26]:
+              - /placeholder: +1 (555) 000-0000
+            - paragraph [ref=e27]: Phone number is required
+          - generic [ref=e28]:
+            - text: Date of Birth
+            - textbox "Date of Birth" [ref=e29]
+            - paragraph [ref=e30]: Date of birth is required
+          - generic [ref=e31]:
+            - text: Gender
+            - combobox [ref=e32]:
+              - generic: Select gender
+              - img [ref=e33]
+            - combobox [ref=e35]
+            - paragraph [ref=e36]: Please select a gender
+        - button "Create Account" [ref=e37]:
+          - img
+          - text: Create Account
+      - generic [ref=e38]:
+        - text: Already have an account?
+        - link "Log in instead" [ref=e39]:
+          - /url: /login
+  - region "Notifications (F8)":
+    - list
+```
