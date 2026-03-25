@@ -125,6 +125,25 @@ test('TC10 - Clear Email Field', async ({ page }) => {
 });
 
 
+test('TC11 - Navigate to Register Page', async ({ page }) => {
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+
+  await page.getByRole('link', { name: /sign up for free/i }).click();
+  
+  await expect(page).toHaveURL(/register/);
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -261,3 +280,25 @@ test('TC10 - Clear Email Field', async ({ page }) => {
 //   const visible = await login.isRequiredVisible();
 //   assert(visible);
 // });
+
+
+
+
+
+// test('TC11 - Valid Login', async ({ page }) => {
+//   await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+
+//   await page.getByRole('textbox', { name: 'Email address' }).fill('raghu1@gmail.com');
+//   await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+
+//   await page.getByRole('button', { name: 'Sign In' }).click();
+
+//   // ✅ Should NOT stay on login page
+//   await expect(page).not.toHaveURL(/login/);
+
+//   // Optional (if dashboard text exists)
+//   await expect(page.locator('text=Dashboard')).toBeVisible();
+// });
+
+
+
