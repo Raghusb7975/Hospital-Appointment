@@ -255,11 +255,7 @@ test('TC13 - Invalid characters in name', async ({ page }) => {
 
 test('TC14 - Click "Log in instead" navigates to login', async ({ page }) => {
   await page.goto('https://medi-schedule--raghubakare143.replit.app/register');
-
-
   await page.getByRole('link', { name: 'Log in instead' }).click();
-
-
   await expect(page).toHaveURL(/login/);
 });
 

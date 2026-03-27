@@ -14,7 +14,6 @@ test('TC01 - Navigate to Find Doctors from Dashboard', async ({ page }) => {
   // 🔹 Click "Find Doctors"
   await page.getByRole('link', { name: 'Find Doctors' }).click();
 
-  // ✅ Verify navigation
   await expect(page).toHaveURL(/doctor/i);
 
 });
@@ -95,8 +94,6 @@ test('TC05 - Validate Past Records or Empty Message', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
   await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
   await page.getByRole('button', { name: 'Sign In' }).click();
-
-  // 🔹 Click Past Records tab
   await page.getByRole('tab', { name: 'Past Records' }).click();
 
   // 🔹 Wait for UI
@@ -117,6 +114,25 @@ test('TC05 - Validate Past Records or Empty Message', async ({ page }) => {
 });
 
 
+  
 
+
+test('TC06 - Verify Doctor Name in Upcoming Appointments', async ({ page }) => {
+  // 🔹 Login to the application
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+  await page.getByRole('button', { name: 'Sign In' }).click();
+
+  // 🔹 Navigate to the 'Upcoming' tab
+  await page.getByRole('tab', { name: 'Upcoming' }).click();
+
+  // 🔹 Click on a doctor's name (verify that the doctor’s name matches)
+  const doctorName = 'Dr. Priya Patel';
+  await page.getByRole('heading', { name: doctorName }).click();
+
+  // 🔹 Check if the doctor's name is visible on the page
+  await expect(page.getByRole('heading', { name: doctorName })).toBeVisible();
+});
 
 
