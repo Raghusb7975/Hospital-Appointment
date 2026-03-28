@@ -1,0 +1,199 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14] [cursor=pointer]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart" [ref=e19] [cursor=pointer]:
+            - /url: /cart
+            - img [ref=e20]
+            - text: Appointments Cart
+          - link "Dashboard" [ref=e24] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e25]
+            - text: Dashboard
+        - generic [ref=e31]:
+          - link "R raghu Patient" [ref=e32] [cursor=pointer]:
+            - /url: /profile
+            - generic [ref=e34]: R
+            - generic [ref=e35]:
+              - generic [ref=e36]: raghu
+              - generic [ref=e37]: Patient
+          - button [ref=e38]:
+            - img
+    - main [ref=e39]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: Welcome back
+          - heading "raghu 👋" [level=1] [ref=e46]
+          - paragraph [ref=e47]: You have 1 upcoming appointment
+        - generic [ref=e48]:
+          - link "Find a Doctor" [ref=e49] [cursor=pointer]:
+            - /url: /doctors
+            - button "Find a Doctor" [ref=e50]:
+              - img
+              - text: Find a Doctor
+          - link "View Cart" [ref=e51] [cursor=pointer]:
+            - /url: /cart
+            - button "View Cart" [ref=e52]:
+              - img
+              - text: View Cart
+          - link "Profile" [ref=e53] [cursor=pointer]:
+            - /url: /profile
+            - button "Profile" [ref=e54]:
+              - img
+              - text: Profile
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e61]:
+              - paragraph [ref=e62]: Total Visits
+              - paragraph [ref=e63]: "4"
+          - generic [ref=e64]:
+            - img [ref=e66]
+            - generic [ref=e68]:
+              - paragraph [ref=e69]: Upcoming
+              - paragraph [ref=e70]: "1"
+          - generic [ref=e71]:
+            - img [ref=e73]
+            - generic [ref=e76]:
+              - paragraph [ref=e77]: Completed
+              - paragraph [ref=e78]: "0"
+          - generic [ref=e79]:
+            - img [ref=e81]
+            - generic [ref=e83]:
+              - paragraph [ref=e84]: Total Spent
+              - paragraph [ref=e85]: $520
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - heading "My Appointments" [level=2] [ref=e89]
+            - tablist [ref=e90]:
+              - tab "Upcoming 1" [ref=e91]:
+                - text: Upcoming
+                - generic [ref=e92]: "1"
+              - tab "Past Records 3" [active] [selected] [ref=e93]:
+                - text: Past Records
+                - generic [ref=e94]: "3"
+          - tabpanel "Past Records 3" [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]:
+                - text: "Completed:"
+                - strong [ref=e98]: "0"
+              - generic [ref=e99]:
+                - text: "Cancelled:"
+                - strong [ref=e100]: "3"
+              - generic [ref=e101]:
+                - text: "Total Spent:"
+                - strong [ref=e102]: $520.00
+            - generic [ref=e103]:
+              - generic [ref=e105]:
+                - generic [ref=e106]:
+                  - generic [ref=e108]: P
+                  - generic [ref=e109]:
+                    - generic [ref=e110]:
+                      - heading "Dr. Priya Patel" [level=3] [ref=e111]
+                      - generic [ref=e112]:
+                        - img [ref=e113]
+                        - text: Cancelled
+                    - paragraph [ref=e117]: Pediatrics
+                    - generic [ref=e118]:
+                      - generic [ref=e119]:
+                        - img [ref=e120]
+                        - text: Mar 29th, 2026
+                      - generic [ref=e122]:
+                        - img [ref=e123]
+                        - text: 10:30 AM
+                      - generic [ref=e126]:
+                        - img [ref=e127]
+                        - text: $100.00
+                    - paragraph [ref=e129]:
+                      - img [ref=e130]
+                      - text: Paid
+                - link "View Details" [ref=e134] [cursor=pointer]:
+                  - /url: /confirmation/3
+                  - button "View Details" [ref=e135]:
+                    - img
+                    - text: View Details
+              - generic [ref=e137]:
+                - generic [ref=e138]:
+                  - generic [ref=e140]: P
+                  - generic [ref=e141]:
+                    - generic [ref=e142]:
+                      - heading "Dr. Priya Patel" [level=3] [ref=e143]
+                      - generic [ref=e144]:
+                        - img [ref=e145]
+                        - text: Cancelled
+                    - paragraph [ref=e149]: Pediatrics
+                    - generic [ref=e150]:
+                      - generic [ref=e151]:
+                        - img [ref=e152]
+                        - text: Mar 28th, 2026
+                      - generic [ref=e154]:
+                        - img [ref=e155]
+                        - text: 10:30 AM
+                      - generic [ref=e158]:
+                        - img [ref=e159]
+                        - text: $100.00
+                    - paragraph [ref=e161]:
+                      - img [ref=e162]
+                      - text: Paid
+                - link "View Details" [ref=e166] [cursor=pointer]:
+                  - /url: /confirmation/1
+                  - button "View Details" [ref=e167]:
+                    - img
+                    - text: View Details
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - generic [ref=e172]: W
+                  - generic [ref=e173]:
+                    - generic [ref=e174]:
+                      - heading "Dr. James Williams" [level=3] [ref=e175]
+                      - generic [ref=e176]:
+                        - img [ref=e177]
+                        - text: Cancelled
+                    - paragraph [ref=e181]: Dermatology
+                    - generic [ref=e182]:
+                      - generic [ref=e183]:
+                        - img [ref=e184]
+                        - text: Mar 27th, 2026
+                      - generic [ref=e186]:
+                        - img [ref=e187]
+                        - text: 10:30 AM
+                      - generic [ref=e190]:
+                        - img [ref=e191]
+                        - text: $120.00
+                    - paragraph [ref=e193]:
+                      - img [ref=e194]
+                      - text: Paid
+                - link "View Details" [ref=e198] [cursor=pointer]:
+                  - /url: /confirmation/2
+                  - button "View Details" [ref=e199]:
+                    - img
+                    - text: View Details
+    - contentinfo [ref=e200]:
+      - generic [ref=e201]:
+        - generic [ref=e202]:
+          - img [ref=e203]
+          - generic [ref=e206]: MedBook
+          - generic [ref=e207]: © 2026 All rights reserved.
+        - generic [ref=e208]:
+          - link "Privacy" [ref=e209] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e210] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact Support" [ref=e211] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list
+```
