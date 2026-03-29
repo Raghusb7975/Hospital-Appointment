@@ -17,7 +17,7 @@ test('test01- search a doctor name', async ({ page }) => {
   const doctorName = page.locator('h3', { hasText: 'Dr. Michael Chen' });
   await expect(doctorName).toBeVisible(); 
 });
-test('test  Verify that text "Showing 10 doctors" to appear or not', async ({ page }) => {
+test('test 02-  Verify that text "Showing 10 doctors" to appear or not', async ({ page }) => {
   await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
   
   await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
@@ -33,7 +33,7 @@ test('test  Verify that text "Showing 10 doctors" to appear or not', async ({ pa
 
 })
 
-test('test02-Check if doctor named "raghu" shows up', async ({ page }) => {
+test('test03-Check if doctor named "raghu" shows up', async ({ page }) => {
   // Navigate to login page
   await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
 
@@ -69,21 +69,256 @@ test('test02-Check if doctor named "raghu" shows up', async ({ page }) => {
 
 
 
-// test('TC04 - Verify Search by Specialization', async ({ page }) => {
-//   await page.goto('https://medi-schedule--raghubakare143.replit.app');
+
+test('test04-Verify if "Cardiology" is displayed after search', async ({ page }) => {
+  // Navigate to the login page
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+  
+  // Fill in the email and password and sign in
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+  await page.getByRole('button', { name: 'Sign In' }).click();
+  
+  // Wait for the page to load completely
+  await page.waitForLoadState('load');
+  
+  // Click on the 'Find Doctors' link
+  await page.getByRole('link', { name: 'Find Doctors' }).click();
+
+  // Wait for the search box to be visible and interactable
+  await page.getByRole('textbox', { name: 'Search by name, specialty or' }).click();
+
+  // Type "Cardiology" into the search box
+  await page.getByRole('textbox', { name: 'Search by name, specialty or' }).fill('Cardiology');
+
+  // Wait for the results to load and filter for 'Cardiology'
+  await page.locator('span').filter({ hasText: 'Cardiology' }).waitFor({ timeout: 60000 });
+
+  // Assert that the term "Cardiology" is displayed in the search results
+  const cardiologyText = await page.locator('span').filter({ hasText: 'Cardiology' }).textContent();
+  
+  // Check if the text 'Cardiology' is present in the search results
+  expect(cardiologyText).toContain('Cardiology');
+});
 
 
-//   await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
-//   await page.getByRole('textbox', { name: 'Email address' }).press('Tab');
 
-//   // Enter password and login
-//   await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
-//   await page.getByRole('button', { name: 'Sign In' }).click();
+test('test05-ratings are sorted in descending order', async ({ page }) => {
+  // Navigate to the login page
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+  
+  // Fill in the email and password
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+  
+  // Click on the Sign In button
+  await page.getByRole('button', { name: 'Sign In' }).click();
+  
+  // Wait for the 'Find Doctors' link and click it
+  await page.getByRole('link', { name: 'Find Doctors' }).click();
 
-//   // Navigate to 'Find Doctors'
-//   await page.getByRole('link', { name: 'Find Doctors' }).click();
-//   await page.getByRole('textbox', { name: 'Search by specialization' }).fill('Cardiology');
-//   await page.getByRole('button', { name: 'Search' });
-//   await expect(page).toHaveURL(/search-results/);
-//   await expect(page.getByText('Cardiology')).toBeVisible();
-// });
+  // Wait for the combobox to be visible and interactable
+  const combobox = page.getByRole('combobox').nth(1);
+  await combobox.waitFor({ state: 'visible' });
+  
+  // Select the 'rating' option (ensure this matches the exact option in your HTML)
+  await combobox.selectOption({ value:'rating' });  // You can also try { value: 'rating' } if needed
+  
+  // Wait for the page to update (adjust the time if necessary)
+  await page.waitForTimeout(2000);
+  
+  // Ensure the doctors are sorted by rating, with the top-rated doctors shown first
+  // Use nth(0) to select the first occurrence of 4.9
+  const topRatedDoctor = await page.locator('text=4.9').first(); // Select the first span with 4.9
+  await expect(topRatedDoctor).toBeVisible(); // Verify that a top-rated doctor is visible
+
+  // Optionally, check that the doctors are in descending order of rating
+  const ratings = await page.locator('.doctor-rating') // Adjust the locator to match the doctor's rating element
+    .allTextContents(); 
+
+  // Ensure that the ratings are sorted in descending order
+  const sortedRatings = [...ratings].sort((a, b) => parseFloat(b) - parseFloat(a)); // Sort ratings in descending order
+  expect(ratings).toEqual(sortedRatings); // Verify the ratings are sorted
+});
+
+
+
+test('test06-To verify that clicking on "Orthopedics" shows doctors with that specialty', async ({ page }) => {
+  // Navigate to the login page
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+
+  // Fill in the email and password
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+  
+  // Click on the Sign In button
+  await page.getByRole('button', { name: 'Sign In' }).click();
+
+  // Wait for the 'Find a Doctor' button and click it
+  await page.getByRole('button', { name: 'Find a Doctor' }).click();
+
+  // Click on the 'Orthopedics' button
+  await page.getByRole('button', { name: 'Orthopedics' }).click();
+
+  // Optionally, wait for the page to load and for the doctors to be displayed
+  await page.waitForTimeout(2000); // Adjust the wait time if necessary
+
+  // Verify that the list of doctors shows those related to "Orthopedics"
+  const specialtyDoctors = await page.locator('text=Orthopedics').allTextContents();
+
+  // Ensure that doctors with the 'Orthopedics' specialty are visible
+  expect(specialtyDoctors.length).toBeGreaterThan(0); // Check that at least one doctor with "Orthopedics" is listed
+
+  // Optionally, assert that the doctors' names or specialties match the expected specialty
+  for (let doctor of specialtyDoctors) {
+    expect(doctor.toLowerCase()).toContain('orthopedics');
+  }
+});
+
+
+
+
+test('test07-the combobox is correctly sorting by fee in ascending order', async ({ page }) => {
+  // Navigate to the login page
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+
+  // Fill in the email and password
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+  
+  // Click on the Sign In button
+  await page.getByRole('button', { name: 'Sign In' }).click();
+
+  // Wait for the page to load
+  await page.waitForTimeout(2000);
+
+  // Click on the 'Find a Doctor' button
+  await page.getByRole('button', { name: 'Find a Doctor' }).click();
+
+  // Wait for the combobox to be visible and select 'fee_asc' option for ascending order
+  const combobox = page.getByRole('combobox').nth(1);
+  await combobox.waitFor({ state: 'visible' });
+  await combobox.selectOption({ value: 'fee_asc' });
+
+  // Wait for the page to refresh and load the sorted doctors
+  await page.waitForTimeout(2000); // Adjust timeout as necessary
+
+  // Capture the doctor fees displayed on the page
+  const fees = await page.locator('.doctor-fee') // Adjust the locator to target the fee elements
+    .allTextContents();
+
+  // Convert the fee texts into numbers and sort them in ascending order
+  const feeNumbers = fees.map(fee => parseFloat(fee.replace('$', '').trim())); // Clean and convert fee to number
+  const sortedFees = [...feeNumbers].sort((a, b) => a - b); // Sort the fees in ascending order
+
+  // Verify that the fees on the page are sorted in ascending order
+  expect(feeNumbers).toEqual(sortedFees); // Compare original list with sorted list
+});
+
+
+
+
+test('test08-verify that the combobox for selecting doctors based on experience is working', async ({ page }) => {
+  // Navigate to the login page
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+  
+  // Fill in the email and password
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+  
+  // Click on the Sign In button
+  await page.getByRole('button', { name: 'Sign In' }).click();
+  
+  // Wait for the 'Find a Doctor' button to be visible and click it
+  await page.getByRole('button', { name: 'Find a Doctor' }).click();
+
+  // Wait for the combobox to be visible and select 'experience' sorting option
+  const combobox = page.getByRole('combobox').nth(1);
+  await combobox.waitFor({ state: 'visible' });
+  await combobox.selectOption({ value: 'experience' });
+
+  // Wait for the page to load and display the doctors sorted by experience
+  await page.waitForTimeout(2000); // Adjust timeout as necessary
+
+  // Click on the doctor with 18 years of experience
+  await page.getByText('(18y exp)').click(); // Click the doctor with 18 years of experience
+
+  // Verify that the doctor's name and experience are visible
+  const doctorName = await page.getByRole('heading', { name: 'Dr. Robert Kim' });
+  await expect(doctorName).toBeVisible(); // Ensure that the doctor’s name is visible
+
+  // Verify that the doctor's experience is correctly displayed
+  const doctorExperience = await page.locator('text=(18y exp)');
+  await expect(doctorExperience).toBeVisible(); // Ensure that the experience (18y exp) is visible
+});
+
+
+
+
+
+test('test09-combobox for sorting doctors by fees (from high to low) works correctly', async ({ page }) => {
+  // Navigate to the login page
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+  
+  // Fill in the email and password
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+  
+  // Click on the Sign In button
+  await page.getByRole('button', { name: 'Sign In' }).click();
+
+  // Wait for the 'Find a Doctor' button to be visible and click it
+  await page.getByRole('button', { name: 'Find a Doctor' }).click();
+
+  // Wait for the combobox to be visible and select 'fee_desc' (Sort by high to low fees)
+  const combobox = page.getByRole('combobox').nth(1);
+  await combobox.waitFor({ state: 'visible' });
+  await combobox.selectOption({ value: 'fee_desc' }); // Ensure this matches the actual value for "high to low"
+
+  // Wait for the page to load doctors sorted by descending fee
+  await page.waitForTimeout(2000); // Adjust timeout as necessary
+  
+  // Select a doctor with a high fee (e.g., $250) — this can be adjusted if necessary
+  await page.getByText('$250').click();
+
+  // Check that the doctor’s specialty (e.g., "Oncology") is visible
+  const specialty = await page.locator('span').filter({ hasText: 'Oncology' });
+  await expect(specialty).toBeVisible(); // Verify that the specialty is visible
+
+  // Check that the doctor's name is correct (e.g., 'Dr. Robert Kim')
+  const doctorName = await page.getByRole('heading', { name: 'Dr. Robert Kim' });
+  await expect(doctorName).toBeVisible(); // Verify that the doctor's name is visible
+});
+
+
+
+
+test('test10-check that a doctor with Psychiatry is listed', async ({ page }) => {
+  // Navigate to the login page
+  await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
+
+  // Fill in the email and password
+  await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
+  await page.getByRole('textbox', { name: 'Password' }).fill('Raghu@12345');
+
+  // Click on the Sign In button
+  await page.getByRole('button', { name: 'Sign In' }).click();
+
+  // Wait for the 'Find a Doctor' button to be visible and click it
+  await page.getByRole('button', { name: 'Find a Doctor' }).click();
+
+  // Wait for the combobox to be visible and interactable
+  const combobox = page.getByRole('combobox').first();
+  await combobox.waitFor({ state: 'visible' });
+
+  // Select 'Psychiatry' from the combobox
+  await combobox.selectOption({ label: 'Psychiatry' });
+
+  
+  // Optionally, you can check that a doctor with Psychiatry is listed, e.g., by verifying their name
+  const doctorName = await page.locator('text=Dr. Amanda Foster');  // Replace with an actual doctor's name that appears for Psychiatry
+  await expect(doctorName).toBeVisible();
+});
+
+
+

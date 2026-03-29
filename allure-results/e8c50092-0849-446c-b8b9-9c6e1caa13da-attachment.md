@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14] [cursor=pointer]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+        - generic [ref=e22]:
+          - link "Log in" [ref=e23] [cursor=pointer]:
+            - /url: /login
+            - button "Log in" [ref=e24]
+          - link "Sign up free" [ref=e25] [cursor=pointer]:
+            - /url: /register
+            - button "Sign up free" [ref=e26]
+    - main [ref=e27]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: Trusted by 10,000+ Patients
+          - heading "Find the right doctor, book instantly." [level=1] [ref=e39]
+          - paragraph [ref=e40]: Experience healthcare that revolves around you. Browse top specialists, check real-time availability, and schedule your visit in seconds.
+          - generic [ref=e41]:
+            - link "Find Doctors" [ref=e42] [cursor=pointer]:
+              - /url: /doctors
+              - button "Find Doctors" [ref=e43]:
+                - text: Find Doctors
+                - img
+            - link "Create Patient Account" [ref=e44] [cursor=pointer]:
+              - /url: /register
+              - button "Create Patient Account" [ref=e45]
+        - generic [ref=e48]:
+          - img "Medical Platform" [ref=e49]
+          - generic [ref=e51]:
+            - generic [ref=e54]: Next Available Slot
+            - paragraph [ref=e55]: Dr. Sarah Jenkins
+            - paragraph [ref=e56]: Cardiology • Today at 2:30 PM
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - heading "Why choose MedBook?" [level=2] [ref=e60]
+          - paragraph [ref=e61]: We've simplified the entire healthcare journey so you can focus on what matters most — feeling better.
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - img [ref=e65]
+            - heading "Easy Discovery" [level=3] [ref=e68]
+            - paragraph [ref=e69]: Filter doctors by specialty, location, and rating to find your perfect match in seconds.
+          - generic [ref=e70]:
+            - img [ref=e72]
+            - heading "Instant Booking" [level=3] [ref=e78]
+            - paragraph [ref=e79]: View real-time calendars and secure your slot immediately without phone calls.
+          - generic [ref=e80]:
+            - img [ref=e82]
+            - heading "Verified Experts" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Every doctor on our platform is thoroughly vetted and verified for your peace of mind.
+    - contentinfo [ref=e87]:
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - img [ref=e90]
+          - generic [ref=e93]: MedBook
+          - generic [ref=e94]: © 2026 All rights reserved.
+        - generic [ref=e95]:
+          - link "Privacy" [ref=e96] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e97] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact Support" [ref=e98] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list
+```

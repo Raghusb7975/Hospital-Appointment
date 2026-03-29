@@ -1,0 +1,136 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14] [cursor=pointer]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart" [ref=e21] [cursor=pointer]:
+            - /url: /cart
+            - img [ref=e22]
+            - text: Appointments Cart
+          - link "Dashboard" [ref=e26] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e27]
+            - text: Dashboard
+        - generic [ref=e33]:
+          - link "R raghu Patient" [ref=e34] [cursor=pointer]:
+            - /url: /profile
+            - generic [ref=e36]: R
+            - generic [ref=e37]:
+              - generic [ref=e38]: raghu
+              - generic [ref=e39]: Patient
+          - button [ref=e40]:
+            - img
+    - main [ref=e41]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - paragraph [ref=e47]: Welcome back
+          - heading "raghu 👋" [level=1] [ref=e48]
+          - paragraph [ref=e49]: You have 1 upcoming appointment
+        - generic [ref=e50]:
+          - link "Find a Doctor" [ref=e51] [cursor=pointer]:
+            - /url: /doctors
+            - button "Find a Doctor" [ref=e52]:
+              - img
+              - text: Find a Doctor
+          - link "View Cart" [ref=e53] [cursor=pointer]:
+            - /url: /cart
+            - button "View Cart" [ref=e54]:
+              - img
+              - text: View Cart
+          - link "Profile" [ref=e55] [cursor=pointer]:
+            - /url: /profile
+            - button "Profile" [ref=e56]:
+              - img
+              - text: Profile
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - img [ref=e61]
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: Total Visits
+              - paragraph [ref=e65]: "4"
+          - generic [ref=e66]:
+            - img [ref=e68]
+            - generic [ref=e73]:
+              - paragraph [ref=e74]: Upcoming
+              - paragraph [ref=e75]: "1"
+          - generic [ref=e76]:
+            - img [ref=e78]
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: Completed
+              - paragraph [ref=e83]: "0"
+          - generic [ref=e84]:
+            - img [ref=e86]
+            - generic [ref=e89]:
+              - paragraph [ref=e90]: Total Spent
+              - paragraph [ref=e91]: $520
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - heading "My Appointments" [level=2] [ref=e95]
+            - tablist [ref=e96]:
+              - tab "Upcoming 1" [selected] [ref=e97]:
+                - text: Upcoming
+                - generic [ref=e98]: "1"
+              - tab "Past Records 3" [ref=e99]:
+                - text: Past Records
+                - generic [ref=e100]: "3"
+          - tabpanel "Upcoming 1" [ref=e101]:
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - generic [ref=e107]: C
+                - generic [ref=e108]:
+                  - generic [ref=e109]:
+                    - heading "Dr. Michael Chen" [level=3] [ref=e110]
+                    - generic [ref=e111]:
+                      - img [ref=e112]
+                      - text: Confirmed
+                  - paragraph [ref=e115]: Neurology
+                  - generic [ref=e116]:
+                    - generic [ref=e117]:
+                      - img [ref=e118]
+                      - text: Apr 23rd, 2026
+                    - generic [ref=e123]:
+                      - img [ref=e124]
+                      - text: 01:00 PM
+                    - generic [ref=e127]:
+                      - img [ref=e128]
+                      - text: $200.00
+                  - paragraph [ref=e131]:
+                    - img [ref=e132]
+                    - text: Paid
+              - generic [ref=e136]:
+                - link "View Details" [ref=e137] [cursor=pointer]:
+                  - /url: /confirmation/4
+                  - button "View Details" [ref=e138]:
+                    - img
+                    - text: View Details
+                - button "Cancel Visit" [ref=e139]:
+                  - img
+                  - text: Cancel Visit
+    - contentinfo [ref=e140]:
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - img [ref=e143]
+          - generic [ref=e146]: MedBook
+          - generic [ref=e147]: © 2026 All rights reserved.
+        - generic [ref=e148]:
+          - link "Privacy" [ref=e149] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e150] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact Support" [ref=e151] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list
+```
