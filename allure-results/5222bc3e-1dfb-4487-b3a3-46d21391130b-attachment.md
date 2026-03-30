@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14] [cursor=pointer]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart" [ref=e21] [cursor=pointer]:
+            - /url: /cart
+            - img [ref=e22]
+            - text: Appointments Cart
+          - link "Dashboard" [ref=e26] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e27]
+            - text: Dashboard
+        - generic [ref=e33]:
+          - link "R raghu Patient" [ref=e34] [cursor=pointer]:
+            - /url: /profile
+            - generic [ref=e36]: R
+            - generic [ref=e37]:
+              - generic [ref=e38]: raghu
+              - generic [ref=e39]: Patient
+          - button [ref=e40]:
+            - img
+    - main [ref=e41]:
+      - heading "Your Appointments Cart" [level=1] [ref=e44]:
+        - img [ref=e45]
+        - text: Your Appointments Cart
+      - generic [ref=e50]:
+        - img [ref=e52]
+        - heading "Your cart is empty" [level=2] [ref=e56]
+        - paragraph [ref=e57]: Looks like you haven't added any appointments yet. Find a doctor to get started.
+        - link "Browse Doctors" [ref=e58] [cursor=pointer]:
+          - /url: /doctors
+          - button "Browse Doctors" [ref=e59]
+    - contentinfo [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - img [ref=e63]
+          - generic [ref=e66]: MedBook
+          - generic [ref=e67]: © 2026 All rights reserved.
+        - generic [ref=e68]:
+          - link "Privacy" [ref=e69] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e70] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact Support" [ref=e71] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list
+```

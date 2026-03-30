@@ -1,0 +1,223 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14] [cursor=pointer]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart 3" [ref=e21] [cursor=pointer]:
+            - /url: /cart
+            - img [ref=e22]
+            - text: Appointments Cart
+            - generic [ref=e26]: "3"
+          - link "Dashboard" [ref=e27] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e28]
+            - text: Dashboard
+        - generic [ref=e34]:
+          - link "R raghu Patient" [ref=e35] [cursor=pointer]:
+            - /url: /profile
+            - generic [ref=e37]: R
+            - generic [ref=e38]:
+              - generic [ref=e39]: raghu
+              - generic [ref=e40]: Patient
+          - button [ref=e41]:
+            - img
+    - main [ref=e42]:
+      - link "Back to all doctors" [ref=e45] [cursor=pointer]:
+        - /url: /doctors
+        - img [ref=e46]
+        - text: Back to all doctors
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e54]: D
+            - generic [ref=e55]:
+              - generic [ref=e56]: Neurology
+              - heading "Dr. Michael Chen" [level=1] [ref=e57]
+              - generic [ref=e58]:
+                - generic [ref=e59]:
+                  - img [ref=e60]
+                  - generic [ref=e62]: "4.9"
+                  - generic [ref=e63]: (120+ reviews)
+                - generic [ref=e64]:
+                  - img [ref=e65]
+                  - generic [ref=e68]: 15 Years Experience
+              - generic [ref=e69]:
+                - generic [ref=e70]:
+                  - img [ref=e71]
+                  - generic [ref=e74]:
+                    - paragraph [ref=e75]: Location
+                    - paragraph [ref=e76]: Brain & Spine Center
+                - generic [ref=e77]:
+                  - img [ref=e78]
+                  - generic [ref=e81]:
+                    - paragraph [ref=e82]: Availability
+                    - paragraph [ref=e83]: Tue, Thu, Sat
+          - generic [ref=e84]:
+            - heading "About the Doctor" [level=2] [ref=e85]
+            - paragraph [ref=e86]: Leading neurologist specializing in stroke treatment, epilepsy, and movement disorders with extensive research background.
+            - generic [ref=e87]:
+              - heading "Expertise & Services" [level=3] [ref=e88]
+              - list [ref=e89]:
+                - listitem [ref=e90]:
+                  - img [ref=e91]
+                  - generic [ref=e94]: Specialized Treatment 1
+                - listitem [ref=e95]:
+                  - img [ref=e96]
+                  - generic [ref=e99]: Specialized Treatment 2
+                - listitem [ref=e100]:
+                  - img [ref=e101]
+                  - generic [ref=e104]: Specialized Treatment 3
+                - listitem [ref=e105]:
+                  - img [ref=e106]
+                  - generic [ref=e109]: Specialized Treatment 4
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - heading "Book Appointment" [level=3] [ref=e113]
+            - paragraph [ref=e114]: Select date and time
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: Consultation Fee
+              - generic [ref=e118]: $200
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - img [ref=e121]
+                - text: Select Date
+              - generic [ref=e128]:
+                - navigation "Navigation bar" [ref=e129]:
+                  - button "Go to the Previous Month" [ref=e130]:
+                    - img
+                  - button "Go to the Next Month" [ref=e131]:
+                    - img
+                - generic [ref=e132]:
+                  - status [ref=e134]: March 2026
+                  - grid "March 2026" [ref=e135]:
+                    - rowgroup [ref=e136]:
+                      - row [ref=e137]:
+                        - columnheader [ref=e138]: Su
+                        - columnheader [ref=e139]: Mo
+                        - columnheader [ref=e140]: Tu
+                        - columnheader [ref=e141]: We
+                        - columnheader [ref=e142]: Th
+                        - columnheader [ref=e143]: Fr
+                        - columnheader [ref=e144]: Sa
+                    - rowgroup [ref=e145]:
+                      - row "Sunday, March 1st, 2026 Monday, March 2nd, 2026 Tuesday, March 3rd, 2026 Wednesday, March 4th, 2026 Thursday, March 5th, 2026 Friday, March 6th, 2026 Saturday, March 7th, 2026" [ref=e146]:
+                        - gridcell "Sunday, March 1st, 2026" [ref=e147]:
+                          - button "Sunday, March 1st, 2026" [disabled]: "1"
+                        - gridcell "Monday, March 2nd, 2026" [ref=e148]:
+                          - button "Monday, March 2nd, 2026" [disabled]: "2"
+                        - gridcell "Tuesday, March 3rd, 2026" [ref=e149]:
+                          - button "Tuesday, March 3rd, 2026" [disabled]: "3"
+                        - gridcell "Wednesday, March 4th, 2026" [ref=e150]:
+                          - button "Wednesday, March 4th, 2026" [disabled]: "4"
+                        - gridcell "Thursday, March 5th, 2026" [ref=e151]:
+                          - button "Thursday, March 5th, 2026" [disabled]: "5"
+                        - gridcell "Friday, March 6th, 2026" [ref=e152]:
+                          - button "Friday, March 6th, 2026" [disabled]: "6"
+                        - gridcell "Saturday, March 7th, 2026" [ref=e153]:
+                          - button "Saturday, March 7th, 2026" [disabled]: "7"
+                      - row "Sunday, March 8th, 2026 Monday, March 9th, 2026 Tuesday, March 10th, 2026 Wednesday, March 11th, 2026 Thursday, March 12th, 2026 Friday, March 13th, 2026 Saturday, March 14th, 2026" [ref=e154]:
+                        - gridcell "Sunday, March 8th, 2026" [ref=e155]:
+                          - button "Sunday, March 8th, 2026" [disabled]: "8"
+                        - gridcell "Monday, March 9th, 2026" [ref=e156]:
+                          - button "Monday, March 9th, 2026" [disabled]: "9"
+                        - gridcell "Tuesday, March 10th, 2026" [ref=e157]:
+                          - button "Tuesday, March 10th, 2026" [disabled]: "10"
+                        - gridcell "Wednesday, March 11th, 2026" [ref=e158]:
+                          - button "Wednesday, March 11th, 2026" [disabled]: "11"
+                        - gridcell "Thursday, March 12th, 2026" [ref=e159]:
+                          - button "Thursday, March 12th, 2026" [disabled]: "12"
+                        - gridcell "Friday, March 13th, 2026" [ref=e160]:
+                          - button "Friday, March 13th, 2026" [disabled]: "13"
+                        - gridcell "Saturday, March 14th, 2026" [ref=e161]:
+                          - button "Saturday, March 14th, 2026" [disabled]: "14"
+                      - row "Sunday, March 15th, 2026 Monday, March 16th, 2026 Tuesday, March 17th, 2026 Wednesday, March 18th, 2026 Thursday, March 19th, 2026 Friday, March 20th, 2026 Saturday, March 21st, 2026" [ref=e162]:
+                        - gridcell "Sunday, March 15th, 2026" [ref=e163]:
+                          - button "Sunday, March 15th, 2026" [disabled]: "15"
+                        - gridcell "Monday, March 16th, 2026" [ref=e164]:
+                          - button "Monday, March 16th, 2026" [disabled]: "16"
+                        - gridcell "Tuesday, March 17th, 2026" [ref=e165]:
+                          - button "Tuesday, March 17th, 2026" [disabled]: "17"
+                        - gridcell "Wednesday, March 18th, 2026" [ref=e166]:
+                          - button "Wednesday, March 18th, 2026" [disabled]: "18"
+                        - gridcell "Thursday, March 19th, 2026" [ref=e167]:
+                          - button "Thursday, March 19th, 2026" [disabled]: "19"
+                        - gridcell "Friday, March 20th, 2026" [ref=e168]:
+                          - button "Friday, March 20th, 2026" [disabled]: "20"
+                        - gridcell "Saturday, March 21st, 2026" [ref=e169]:
+                          - button "Saturday, March 21st, 2026" [disabled]: "21"
+                      - row "Sunday, March 22nd, 2026 Monday, March 23rd, 2026 Tuesday, March 24th, 2026 Wednesday, March 25th, 2026 Thursday, March 26th, 2026 Friday, March 27th, 2026 Saturday, March 28th, 2026" [ref=e170]:
+                        - gridcell "Sunday, March 22nd, 2026" [ref=e171]:
+                          - button "Sunday, March 22nd, 2026" [disabled]: "22"
+                        - gridcell "Monday, March 23rd, 2026" [ref=e172]:
+                          - button "Monday, March 23rd, 2026" [disabled]: "23"
+                        - gridcell "Tuesday, March 24th, 2026" [ref=e173]:
+                          - button "Tuesday, March 24th, 2026" [disabled]: "24"
+                        - gridcell "Wednesday, March 25th, 2026" [ref=e174]:
+                          - button "Wednesday, March 25th, 2026" [disabled]: "25"
+                        - gridcell "Thursday, March 26th, 2026" [ref=e175]:
+                          - button "Thursday, March 26th, 2026" [disabled]: "26"
+                        - gridcell "Friday, March 27th, 2026" [ref=e176]:
+                          - button "Friday, March 27th, 2026" [disabled]: "27"
+                        - gridcell "Saturday, March 28th, 2026" [ref=e177]:
+                          - button "Saturday, March 28th, 2026" [disabled]: "28"
+                      - row "Sunday, March 29th, 2026 Today, Monday, March 30th, 2026, selected Tuesday, March 31st, 2026 Wednesday, April 1st, 2026 Thursday, April 2nd, 2026 Friday, April 3rd, 2026 Saturday, April 4th, 2026" [ref=e178]:
+                        - gridcell "Sunday, March 29th, 2026" [ref=e179]:
+                          - button "Sunday, March 29th, 2026" [disabled]: "29"
+                        - gridcell "Today, Monday, March 30th, 2026, selected" [selected] [ref=e180]:
+                          - button "Today, Monday, March 30th, 2026, selected" [ref=e181]: "30"
+                        - gridcell "Tuesday, March 31st, 2026" [ref=e182]:
+                          - button "Tuesday, March 31st, 2026" [ref=e183]: "31"
+                        - gridcell "Wednesday, April 1st, 2026" [ref=e184]:
+                          - button "Wednesday, April 1st, 2026" [ref=e185]: "1"
+                        - gridcell "Thursday, April 2nd, 2026" [ref=e186]:
+                          - button "Thursday, April 2nd, 2026" [ref=e187]: "2"
+                        - gridcell "Friday, April 3rd, 2026" [ref=e188]:
+                          - button "Friday, April 3rd, 2026" [ref=e189]: "3"
+                        - gridcell "Saturday, April 4th, 2026" [ref=e190]:
+                          - button "Saturday, April 4th, 2026" [ref=e191]: "4"
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - img [ref=e194]
+                - text: Select Time
+              - combobox [ref=e197]:
+                - generic: Choose a time slot
+                - img [ref=e198]
+            - generic [ref=e200]:
+              - text: Patient Notes (Optional)
+              - textbox "Briefly describe your symptoms or reason for visit..." [ref=e201]
+            - button "Add to Cart" [disabled]
+            - paragraph [ref=e202]: You won't be charged yet. Payment is collected at checkout.
+    - contentinfo [ref=e203]:
+      - generic [ref=e204]:
+        - generic [ref=e205]:
+          - img [ref=e206]
+          - generic [ref=e209]: MedBook
+          - generic [ref=e210]: © 2026 All rights reserved.
+        - generic [ref=e211]:
+          - link "Privacy" [ref=e212] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e213] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact Support" [ref=e214] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list [ref=e216]:
+      - listitem [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]: Welcome back!
+          - generic [ref=e220]: You have successfully logged in.
+        - button [ref=e221]:
+          - img [ref=e222]
+```
