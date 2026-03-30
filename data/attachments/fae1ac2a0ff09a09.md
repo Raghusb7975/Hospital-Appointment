@@ -1,0 +1,134 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e4]:
+        - generic [ref=e6]:
+          - link "MedBook." [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img [ref=e9]
+            - generic [ref=e12]: MedBook.
+          - navigation [ref=e13]:
+            - link "Find Doctors" [ref=e14] [cursor=pointer]:
+              - /url: /doctors
+              - img [ref=e15]
+              - text: Find Doctors
+            - link "Appointments Cart 1" [ref=e21] [cursor=pointer]:
+              - /url: /cart
+              - img [ref=e22]
+              - text: Appointments Cart
+              - generic [ref=e26]: "1"
+            - link "Dashboard" [ref=e27] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e28]
+              - text: Dashboard
+          - generic [ref=e34]:
+            - link "R raghu Patient" [ref=e35] [cursor=pointer]:
+              - /url: /profile
+              - generic [ref=e37]: R
+              - generic [ref=e38]:
+                - generic [ref=e39]: raghu
+                - generic [ref=e40]: Patient
+            - button [ref=e41]:
+              - img
+      - main [ref=e42]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - img [ref=e47]
+            - generic [ref=e53]: 10 Specialists Available
+          - heading "Find the Right Doctor" [level=1] [ref=e54]
+          - paragraph [ref=e55]: Search by name, specialty, or hospital — results update instantly.
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - img [ref=e58]
+              - textbox "Search by name, specialty or hospital..." [ref=e61]
+            - combobox [ref=e63]:
+              - option "All Specialties"
+              - option "Cardiology"
+              - option "Dermatology"
+              - option "Gastroenterology"
+              - option "General Medicine"
+              - option "Gynecology"
+              - option "Neurology"
+              - option "Oncology"
+              - option "Orthopedics" [selected]
+              - option "Pediatrics"
+              - option "Psychiatry"
+        - generic [ref=e66]:
+          - button "All" [ref=e67]
+          - button "Cardiology" [ref=e68]
+          - button "Dermatology" [ref=e69]
+          - button "Gastroenterology" [ref=e70]
+          - button "General Medicine" [ref=e71]
+          - button "Gynecology" [ref=e72]
+          - button "Neurology" [ref=e73]
+          - button "Oncology" [ref=e74]
+          - button "Orthopedics" [active] [ref=e75]
+          - button "Pediatrics" [ref=e76]
+          - button "Psychiatry" [ref=e77]
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - paragraph [ref=e81]: Showing 1 doctor matching your search
+              - button "Clear filters" [ref=e82]:
+                - img [ref=e83]
+                - text: Clear filters
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - combobox [ref=e97]:
+                - 'option "Sort: Top Rated" [selected]'
+                - 'option "Sort: Most Experienced"'
+                - 'option "Sort: Fee (Low → High)"'
+                - 'option "Sort: Fee (High → Low)"'
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e103]: R
+                - generic [ref=e104]:
+                  - heading "Dr. Emily Rodriguez" [level=3] [ref=e105]
+                  - generic [ref=e106]: Orthopedics
+                  - generic [ref=e107]:
+                    - img [ref=e108]
+                    - generic [ref=e110]: "4.7"
+                    - generic [ref=e111]: (10y exp)
+              - generic [ref=e112]:
+                - generic [ref=e113]:
+                  - img [ref=e114]
+                  - generic [ref=e117]: Bone & Joint Clinic
+                - generic [ref=e118]:
+                  - img [ref=e119]
+                  - generic [ref=e122]: Mon, Tue, Thu
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - paragraph [ref=e125]: Consultation Fee
+                - paragraph [ref=e126]: $175
+              - link "Book Visit" [ref=e127] [cursor=pointer]:
+                - /url: /doctors/3
+                - button "Book Visit" [ref=e128]:
+                  - text: Book Visit
+                  - img
+      - contentinfo [ref=e129]:
+        - generic [ref=e130]:
+          - generic [ref=e131]:
+            - img [ref=e132]
+            - generic [ref=e135]: MedBook
+            - generic [ref=e136]: © 2026 All rights reserved.
+          - generic [ref=e137]:
+            - link "Privacy" [ref=e138] [cursor=pointer]:
+              - /url: "#"
+            - link "Terms" [ref=e139] [cursor=pointer]:
+              - /url: "#"
+            - link "Contact Support" [ref=e140] [cursor=pointer]:
+              - /url: "#"
+    - region "Notifications (F8)":
+      - list [ref=e142]:
+        - listitem [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e145]: Welcome back!
+            - generic [ref=e146]: You have successfully logged in.
+          - button [ref=e147]:
+            - img [ref=e148]
+  - status [ref=e152]: Notification Welcome back!You have successfully logged in.
+```

@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart" [ref=e19]:
+            - /url: /cart
+            - img [ref=e20]
+            - text: Appointments Cart
+          - link "Dashboard" [ref=e24]:
+            - /url: /dashboard
+            - img [ref=e25]
+            - text: Dashboard
+        - generic [ref=e31]:
+          - link "R raghu Patient" [ref=e32]:
+            - /url: /profile
+            - generic [ref=e34]: R
+            - generic [ref=e35]:
+              - generic [ref=e36]: raghu
+              - generic [ref=e37]: Patient
+          - button [ref=e38]:
+            - img
+    - main [ref=e39]:
+      - heading "Your Appointments Cart" [level=1] [ref=e42]:
+        - img [ref=e43]
+        - text: Your Appointments Cart
+      - generic [ref=e48]:
+        - img [ref=e50]
+        - heading "Your cart is empty" [level=2] [ref=e54]
+        - paragraph [ref=e55]: Looks like you haven't added any appointments yet. Find a doctor to get started.
+        - link "Browse Doctors" [ref=e56]:
+          - /url: /doctors
+          - button "Browse Doctors" [ref=e57]
+    - contentinfo [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - img [ref=e61]
+          - generic [ref=e64]: MedBook
+          - generic [ref=e65]: © 2026 All rights reserved.
+        - generic [ref=e66]:
+          - link "Privacy" [ref=e67]:
+            - /url: "#"
+          - link "Terms" [ref=e68]:
+            - /url: "#"
+          - link "Contact Support" [ref=e69]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list
+```
