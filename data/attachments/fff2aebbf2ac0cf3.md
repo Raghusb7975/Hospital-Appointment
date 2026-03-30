@@ -1,0 +1,116 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart 2" [ref=e19]:
+            - /url: /cart
+            - img [ref=e20]
+            - text: Appointments Cart
+            - generic [ref=e24]: "2"
+          - link "Dashboard" [ref=e25]:
+            - /url: /dashboard
+            - img [ref=e26]
+            - text: Dashboard
+        - generic [ref=e32]:
+          - link "R raghu Patient" [ref=e33]:
+            - /url: /profile
+            - generic [ref=e35]: R
+            - generic [ref=e36]:
+              - generic [ref=e37]: raghu
+              - generic [ref=e38]: Patient
+          - button [ref=e39]:
+            - img
+    - main [ref=e40]:
+      - heading "Your Appointments Cart" [level=1] [ref=e43]:
+        - img [ref=e44]
+        - text: Your Appointments Cart
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e53]: D
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e56]:
+                  - heading "Dr. Priya Patel" [level=3] [ref=e57]
+                  - paragraph [ref=e58]: Pediatrics
+                - generic [ref=e60]: $100
+              - generic [ref=e61]:
+                - generic [ref=e62]:
+                  - img [ref=e63]
+                  - text: Wednesday, April 15th, 2026
+                - generic [ref=e65]:
+                  - img [ref=e66]
+                  - text: 09:00 AM
+            - button [ref=e69]:
+              - img
+          - generic [ref=e70]:
+            - generic [ref=e72]: D
+            - generic [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e75]:
+                  - heading "Dr. Priya Patel" [level=3] [ref=e76]
+                  - paragraph [ref=e77]: Pediatrics
+                - generic [ref=e79]: $100
+              - generic [ref=e80]:
+                - generic [ref=e81]:
+                  - img [ref=e82]
+                  - text: Wednesday, April 15th, 2026
+                - generic [ref=e84]:
+                  - img [ref=e85]
+                  - text: 09:00 AM
+            - button [ref=e88]:
+              - img
+        - generic [ref=e90]:
+          - heading "Order Summary" [level=3] [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - generic [ref=e94]: Subtotal (2 items)
+              - generic [ref=e95]: $200.00
+            - generic [ref=e96]:
+              - generic [ref=e97]: Platform Fee
+              - generic [ref=e98]: $10.00
+          - generic [ref=e99]:
+            - generic [ref=e100]: Total Due
+            - generic [ref=e101]: $210.00
+          - link "Proceed to Checkout" [ref=e102]:
+            - /url: /payment?cartItemId=6
+            - button "Proceed to Checkout" [ref=e103]:
+              - text: Proceed to Checkout
+              - img
+          - generic [ref=e104]:
+            - img [ref=e105]
+            - text: Secure encrypted payment
+    - contentinfo [ref=e107]:
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - img [ref=e110]
+          - generic [ref=e113]: MedBook
+          - generic [ref=e114]: © 2026 All rights reserved.
+        - generic [ref=e115]:
+          - link "Privacy" [ref=e116]:
+            - /url: "#"
+          - link "Terms" [ref=e117]:
+            - /url: "#"
+          - link "Contact Support" [ref=e118]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list [ref=e120]:
+      - listitem [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: Added to Cart
+          - generic [ref=e124]: Appointment added to your cart successfully.
+        - button [ref=e125]:
+          - img [ref=e126]
+```

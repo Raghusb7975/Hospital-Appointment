@@ -1,0 +1,258 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - link:
+              - /url: /
+              - generic:
+                - img
+              - generic: MedBook.
+            - navigation:
+              - link:
+                - /url: /doctors
+                - img
+                - text: Find Doctors
+              - link:
+                - /url: /cart
+                - img
+                - text: Appointments Cart
+                - generic: "1"
+              - link:
+                - /url: /dashboard
+                - img
+                - text: Dashboard
+            - generic:
+              - generic:
+                - link:
+                  - /url: /profile
+                  - generic:
+                    - generic: R
+                  - generic:
+                    - generic: raghu
+                    - generic: Patient
+                - button:
+                  - img
+      - main:
+        - generic:
+          - generic:
+            - link:
+              - /url: /doctors
+              - img
+              - text: Back to all doctors
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: D
+                - generic:
+                  - generic: Pediatrics
+                  - heading [level=1]: Dr. Priya Patel
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4.9"
+                      - generic: (120+ reviews)
+                    - generic:
+                      - img
+                      - generic: 11 Years Experience
+                  - generic:
+                    - generic:
+                      - img
+                      - generic:
+                        - paragraph: Location
+                        - paragraph: Children's Health Center
+                    - generic:
+                      - img
+                      - generic:
+                        - paragraph: Availability
+                        - paragraph: Mon, Wed, Fri, Sat
+              - generic:
+                - heading [level=2]: About the Doctor
+                - paragraph: Compassionate pediatrician dedicated to providing comprehensive care for children from newborns to adolescents.
+                - generic:
+                  - heading [level=3]: Expertise & Services
+                  - list:
+                    - listitem:
+                      - img
+                      - generic: Specialized Treatment 1
+                    - listitem:
+                      - img
+                      - generic: Specialized Treatment 2
+                    - listitem:
+                      - img
+                      - generic: Specialized Treatment 3
+                    - listitem:
+                      - img
+                      - generic: Specialized Treatment 4
+            - generic:
+              - generic:
+                - generic:
+                  - heading [level=3]: Book Appointment
+                  - paragraph: Select date and time
+                - generic:
+                  - generic:
+                    - generic: Consultation Fee
+                    - generic: $100
+                  - generic:
+                    - generic:
+                      - img
+                      - text: Select Date
+                    - generic:
+                      - generic:
+                        - generic:
+                          - navigation "Navigation bar":
+                            - button "Go to the Previous Month":
+                              - img
+                            - button "Go to the Next Month":
+                              - img
+                          - generic:
+                            - generic:
+                              - status: April 2026
+                            - grid "April 2026":
+                              - rowgroup:
+                                - row:
+                                  - columnheader: Su
+                                  - columnheader: Mo
+                                  - columnheader: Tu
+                                  - columnheader: We
+                                  - columnheader: Th
+                                  - columnheader: Fr
+                                  - columnheader: Sa
+                              - rowgroup:
+                                - row "Today, Sunday, March 29th, 2026 Monday, March 30th, 2026 Tuesday, March 31st, 2026 Wednesday, April 1st, 2026 Thursday, April 2nd, 2026 Friday, April 3rd, 2026 Saturday, April 4th, 2026":
+                                  - gridcell "Today, Sunday, March 29th, 2026":
+                                    - button "Today, Sunday, March 29th, 2026": "29"
+                                  - gridcell "Monday, March 30th, 2026":
+                                    - button "Monday, March 30th, 2026": "30"
+                                  - gridcell "Tuesday, March 31st, 2026":
+                                    - button "Tuesday, March 31st, 2026": "31"
+                                  - gridcell "Wednesday, April 1st, 2026":
+                                    - button "Wednesday, April 1st, 2026": "1"
+                                  - gridcell "Thursday, April 2nd, 2026":
+                                    - button "Thursday, April 2nd, 2026": "2"
+                                  - gridcell "Friday, April 3rd, 2026":
+                                    - button "Friday, April 3rd, 2026": "3"
+                                  - gridcell "Saturday, April 4th, 2026":
+                                    - button "Saturday, April 4th, 2026": "4"
+                                - row "Sunday, April 5th, 2026 Monday, April 6th, 2026 Tuesday, April 7th, 2026 Wednesday, April 8th, 2026 Thursday, April 9th, 2026 Friday, April 10th, 2026 Saturday, April 11th, 2026":
+                                  - gridcell "Sunday, April 5th, 2026":
+                                    - button "Sunday, April 5th, 2026": "5"
+                                  - gridcell "Monday, April 6th, 2026":
+                                    - button "Monday, April 6th, 2026": "6"
+                                  - gridcell "Tuesday, April 7th, 2026":
+                                    - button "Tuesday, April 7th, 2026": "7"
+                                  - gridcell "Wednesday, April 8th, 2026":
+                                    - button "Wednesday, April 8th, 2026": "8"
+                                  - gridcell "Thursday, April 9th, 2026":
+                                    - button "Thursday, April 9th, 2026": "9"
+                                  - gridcell "Friday, April 10th, 2026":
+                                    - button "Friday, April 10th, 2026": "10"
+                                  - gridcell "Saturday, April 11th, 2026":
+                                    - button "Saturday, April 11th, 2026": "11"
+                                - row "Sunday, April 12th, 2026 Monday, April 13th, 2026 Tuesday, April 14th, 2026 Wednesday, April 15th, 2026, selected Thursday, April 16th, 2026 Friday, April 17th, 2026 Saturday, April 18th, 2026":
+                                  - gridcell "Sunday, April 12th, 2026":
+                                    - button "Sunday, April 12th, 2026": "12"
+                                  - gridcell "Monday, April 13th, 2026":
+                                    - button "Monday, April 13th, 2026": "13"
+                                  - gridcell "Tuesday, April 14th, 2026":
+                                    - button "Tuesday, April 14th, 2026": "14"
+                                  - gridcell "Wednesday, April 15th, 2026, selected" [selected]:
+                                    - button "Wednesday, April 15th, 2026, selected": "15"
+                                  - gridcell "Thursday, April 16th, 2026":
+                                    - button "Thursday, April 16th, 2026": "16"
+                                  - gridcell "Friday, April 17th, 2026":
+                                    - button "Friday, April 17th, 2026": "17"
+                                  - gridcell "Saturday, April 18th, 2026":
+                                    - button "Saturday, April 18th, 2026": "18"
+                                - row "Sunday, April 19th, 2026 Monday, April 20th, 2026 Tuesday, April 21st, 2026 Wednesday, April 22nd, 2026 Thursday, April 23rd, 2026 Friday, April 24th, 2026 Saturday, April 25th, 2026":
+                                  - gridcell "Sunday, April 19th, 2026":
+                                    - button "Sunday, April 19th, 2026": "19"
+                                  - gridcell "Monday, April 20th, 2026":
+                                    - button "Monday, April 20th, 2026": "20"
+                                  - gridcell "Tuesday, April 21st, 2026":
+                                    - button "Tuesday, April 21st, 2026": "21"
+                                  - gridcell "Wednesday, April 22nd, 2026":
+                                    - button "Wednesday, April 22nd, 2026": "22"
+                                  - gridcell "Thursday, April 23rd, 2026":
+                                    - button "Thursday, April 23rd, 2026": "23"
+                                  - gridcell "Friday, April 24th, 2026":
+                                    - button "Friday, April 24th, 2026": "24"
+                                  - gridcell "Saturday, April 25th, 2026":
+                                    - button "Saturday, April 25th, 2026": "25"
+                                - row "Sunday, April 26th, 2026 Monday, April 27th, 2026 Tuesday, April 28th, 2026 Wednesday, April 29th, 2026 Thursday, April 30th, 2026 Friday, May 1st, 2026 Saturday, May 2nd, 2026":
+                                  - gridcell "Sunday, April 26th, 2026":
+                                    - button "Sunday, April 26th, 2026": "26"
+                                  - gridcell "Monday, April 27th, 2026":
+                                    - button "Monday, April 27th, 2026": "27"
+                                  - gridcell "Tuesday, April 28th, 2026":
+                                    - button "Tuesday, April 28th, 2026": "28"
+                                  - gridcell "Wednesday, April 29th, 2026":
+                                    - button "Wednesday, April 29th, 2026": "29"
+                                  - gridcell "Thursday, April 30th, 2026":
+                                    - button "Thursday, April 30th, 2026": "30"
+                                  - gridcell "Friday, May 1st, 2026":
+                                    - button "Friday, May 1st, 2026": "1"
+                                  - gridcell "Saturday, May 2nd, 2026":
+                                    - button "Saturday, May 2nd, 2026": "2"
+                  - generic:
+                    - generic:
+                      - img
+                      - text: Select Time
+                    - combobox [expanded]:
+                      - generic: Choose a time slot
+                      - img
+                  - generic:
+                    - text: Patient Notes (Optional)
+                    - textbox:
+                      - /placeholder: Briefly describe your symptoms or reason for visit...
+                  - button [disabled]: Add to Cart
+                  - paragraph: You won't be charged yet. Payment is collected at checkout.
+      - contentinfo:
+        - generic:
+          - generic:
+            - img
+            - generic: MedBook
+            - generic: © 2026 All rights reserved.
+          - generic:
+            - link:
+              - /url: "#"
+              - text: Privacy
+            - link:
+              - /url: "#"
+              - text: Terms
+            - link:
+              - /url: "#"
+              - text: Contact Support
+    - list
+  - listbox [ref=e1]:
+    - option "09:00 AM" [active] [ref=e2]:
+      - generic [ref=e4]: 09:00 AM
+    - option "09:30 AM" [ref=e5]:
+      - generic [ref=e7]: 09:30 AM
+    - option "10:00 AM" [ref=e8]:
+      - generic [ref=e10]: 10:00 AM
+    - option "10:30 AM" [ref=e11]:
+      - generic [ref=e13]: 10:30 AM
+    - option "11:00 AM" [ref=e14]:
+      - generic [ref=e16]: 11:00 AM
+    - option "11:30 AM" [ref=e17]:
+      - generic [ref=e19]: 11:30 AM
+    - option "01:00 PM" [ref=e20]:
+      - generic [ref=e22]: 01:00 PM
+    - option "01:30 PM" [ref=e23]:
+      - generic [ref=e25]: 01:30 PM
+    - option "02:00 PM" [ref=e26]:
+      - generic [ref=e28]: 02:00 PM
+    - option "03:00 PM" [ref=e29]:
+      - generic [ref=e31]: 03:00 PM
+    - option "04:00 PM" [ref=e32]:
+      - generic [ref=e34]: 04:00 PM
+    - option "04:30 PM" [ref=e35]:
+      - generic [ref=e37]: 04:30 PM
+```

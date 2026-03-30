@@ -1,0 +1,133 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart 3" [ref=e19]:
+            - /url: /cart
+            - img [ref=e20]
+            - text: Appointments Cart
+            - generic [ref=e24]: "3"
+          - link "Dashboard" [ref=e25]:
+            - /url: /dashboard
+            - img [ref=e26]
+            - text: Dashboard
+        - generic [ref=e32]:
+          - link "R raghu Patient" [ref=e33]:
+            - /url: /profile
+            - generic [ref=e35]: R
+            - generic [ref=e36]:
+              - generic [ref=e37]: raghu
+              - generic [ref=e38]: Patient
+          - button [ref=e39]:
+            - img
+    - main [ref=e40]:
+      - heading "Your Appointments Cart" [level=1] [ref=e43]:
+        - img [ref=e44]
+        - text: Your Appointments Cart
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e53]: D
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - generic [ref=e56]:
+                  - heading "Dr. Priya Patel" [level=3] [ref=e57]
+                  - paragraph [ref=e58]: Pediatrics
+                - generic [ref=e60]: $100
+              - generic [ref=e61]:
+                - generic [ref=e62]:
+                  - img [ref=e63]
+                  - text: Wednesday, April 15th, 2026
+                - generic [ref=e65]:
+                  - img [ref=e66]
+                  - text: 09:00 AM
+            - button [ref=e69]:
+              - img
+          - generic [ref=e70]:
+            - generic [ref=e72]: D
+            - generic [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e75]:
+                  - heading "Dr. Priya Patel" [level=3] [ref=e76]
+                  - paragraph [ref=e77]: Pediatrics
+                - generic [ref=e79]: $100
+              - generic [ref=e80]:
+                - generic [ref=e81]:
+                  - img [ref=e82]
+                  - text: Wednesday, April 15th, 2026
+                - generic [ref=e84]:
+                  - img [ref=e85]
+                  - text: 09:00 AM
+            - button [ref=e88]:
+              - img
+          - generic [ref=e89]:
+            - generic [ref=e91]: D
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - generic [ref=e94]:
+                  - heading "Dr. Priya Patel" [level=3] [ref=e95]
+                  - paragraph [ref=e96]: Pediatrics
+                - generic [ref=e98]: $100
+              - generic [ref=e99]:
+                - generic [ref=e100]:
+                  - img [ref=e101]
+                  - text: Wednesday, April 15th, 2026
+                - generic [ref=e103]:
+                  - img [ref=e104]
+                  - text: 09:00 AM
+            - button [ref=e107]:
+              - img
+        - generic [ref=e109]:
+          - heading "Order Summary" [level=3] [ref=e110]
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113]: Subtotal (3 items)
+              - generic [ref=e114]: $300.00
+            - generic [ref=e115]:
+              - generic [ref=e116]: Platform Fee
+              - generic [ref=e117]: $15.00
+          - generic [ref=e118]:
+            - generic [ref=e119]: Total Due
+            - generic [ref=e120]: $315.00
+          - link "Proceed to Checkout" [ref=e121]:
+            - /url: /payment?cartItemId=6
+            - button "Proceed to Checkout" [ref=e122]:
+              - text: Proceed to Checkout
+              - img
+          - generic [ref=e123]:
+            - img [ref=e124]
+            - text: Secure encrypted payment
+    - contentinfo [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - img [ref=e129]
+          - generic [ref=e132]: MedBook
+          - generic [ref=e133]: © 2026 All rights reserved.
+        - generic [ref=e134]:
+          - link "Privacy" [ref=e135]:
+            - /url: "#"
+          - link "Terms" [ref=e136]:
+            - /url: "#"
+          - link "Contact Support" [ref=e137]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list [ref=e139]:
+      - listitem [ref=e140]:
+        - generic [ref=e141]:
+          - generic [ref=e142]: Added to Cart
+          - generic [ref=e143]: Appointment added to your cart successfully.
+        - button [ref=e144]:
+          - img [ref=e145]
+```
