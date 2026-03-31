@@ -1,15 +1,9 @@
-
-
 {
-  "name": "html5-up",
+  "name": "hospital-playwright-testing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "playwright test",
-    "test:ci": "playwright test",
-    "allure:generate": "allure generate allure-results -o allure-report"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,20 +11,9 @@
   "devDependencies": {
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.5.0",
-    "allure-commandline": "^2.38.1",
+    "allure": "^3.3.1",
     "allure-playwright": "^3.6.0"
-  },
-  "directories": {
-    "test": "tests"
-  },
-  "dependencies": {
-    "allure-js-commons": "^3.6.0",
-    "charenc": "^0.0.2",
-    "crypt": "^0.0.2",
-    "is-buffer": "^1.1.6",
-    "md5": "^2.3.0",
-    "playwright": "^1.58.2",
-    "playwright-core": "^1.58.2",
-    "undici-types": "^7.18.2"
   }
 }
+
+
