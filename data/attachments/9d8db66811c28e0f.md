@@ -1,0 +1,127 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14] [cursor=pointer]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart" [ref=e19] [cursor=pointer]:
+            - /url: /cart
+            - img [ref=e20]
+            - text: Appointments Cart
+          - link "Dashboard" [ref=e24] [cursor=pointer]:
+            - /url: /dashboard
+            - img [ref=e25]
+            - text: Dashboard
+        - generic [ref=e31]:
+          - link "R raghu Patient" [ref=e32] [cursor=pointer]:
+            - /url: /profile
+            - generic [ref=e34]: R
+            - generic [ref=e35]:
+              - generic [ref=e36]: raghu
+              - generic [ref=e37]: Patient
+          - button [ref=e38]:
+            - img
+    - main [ref=e39]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - img [ref=e44]
+          - generic [ref=e48]: 10 Specialists Available
+        - heading "Find the Right Doctor" [level=1] [ref=e49]
+        - paragraph [ref=e50]: Search by name, specialty, or hospital — results update instantly.
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - img [ref=e53]
+            - textbox "Search by name, specialty or hospital..." [ref=e56]
+          - combobox [ref=e58]:
+            - option "All Specialties" [selected]
+            - option "Cardiology"
+            - option "Dermatology"
+            - option "Gastroenterology"
+            - option "General Medicine"
+            - option "Gynecology"
+            - option "Neurology"
+            - option "Oncology"
+            - option "Orthopedics"
+            - option "Pediatrics"
+            - option "Psychiatry"
+      - generic [ref=e61]:
+        - button "All" [ref=e62]
+        - button "Cardiology" [ref=e63]
+        - button "Dermatology" [ref=e64]
+        - button "Gastroenterology" [ref=e65]
+        - button "General Medicine" [ref=e66]
+        - button "Gynecology" [ref=e67]
+        - button "Neurology" [ref=e68]
+        - button "Oncology" [ref=e69]
+        - button "Orthopedics" [ref=e70]
+        - button "Pediatrics" [ref=e71]
+        - button "Psychiatry" [ref=e72]
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - paragraph [ref=e76]: Showing 10 doctors
+          - generic [ref=e77]:
+            - img [ref=e78]
+            - combobox [ref=e79]:
+              - 'option "Sort: Top Rated" [selected]'
+              - 'option "Sort: Most Experienced"'
+              - 'option "Sort: Fee (Low → High)"'
+              - 'option "Sort: Fee (High → Low)"'
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e85]: C
+              - generic [ref=e86]:
+                - heading "Dr. Michael Chen" [level=3] [ref=e87]
+                - generic [ref=e88]: Neurology
+                - generic [ref=e89]:
+                  - img [ref=e90]
+                  - generic [ref=e92]: "4.9"
+                  - generic [ref=e93]: (15y exp)
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - img [ref=e96]
+                - generic [ref=e99]: Brain & Spine Center
+              - generic [ref=e100]:
+                - img [ref=e101]
+                - generic [ref=e104]: Tue, Thu, Sat
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - paragraph [ref=e107]: Consultation Fee
+              - paragraph [ref=e108]: $200
+            - link "Book Visit" [ref=e109] [cursor=pointer]:
+              - /url: /doctors/2
+              - button "Book Visit" [ref=e110]:
+                - text: Book Visit
+                - img
+    - contentinfo [ref=e111]:
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - img [ref=e114]
+          - generic [ref=e117]: MedBook
+          - generic [ref=e118]: © 2026 All rights reserved.
+        - generic [ref=e119]:
+          - link "Privacy" [ref=e120] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e121] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact Support" [ref=e122] [cursor=pointer]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list [ref=e124]:
+      - listitem [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]: Welcome back!
+          - generic [ref=e128]: You have successfully logged in.
+        - button [ref=e129]:
+          - img [ref=e130]
+```

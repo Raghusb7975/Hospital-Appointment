@@ -1,0 +1,365 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart" [ref=e19]:
+            - /url: /cart
+            - img [ref=e20]
+            - text: Appointments Cart
+          - link "Dashboard" [ref=e24]:
+            - /url: /dashboard
+            - img [ref=e25]
+            - text: Dashboard
+        - generic [ref=e31]:
+          - link "R raghu Patient" [ref=e32]:
+            - /url: /profile
+            - generic [ref=e34]: R
+            - generic [ref=e35]:
+              - generic [ref=e36]: raghu
+              - generic [ref=e37]: Patient
+          - button [ref=e38]:
+            - img
+    - main [ref=e39]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - img [ref=e44]
+          - generic [ref=e48]: 10 Specialists Available
+        - heading "Find the Right Doctor" [level=1] [ref=e49]
+        - paragraph [ref=e50]: Search by name, specialty, or hospital — results update instantly.
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - img [ref=e53]
+            - textbox "Search by name, specialty or hospital..." [ref=e56]
+          - combobox [ref=e58]:
+            - option "All Specialties" [selected]
+            - option "Cardiology"
+            - option "Dermatology"
+            - option "Gastroenterology"
+            - option "General Medicine"
+            - option "Gynecology"
+            - option "Neurology"
+            - option "Oncology"
+            - option "Orthopedics"
+            - option "Pediatrics"
+            - option "Psychiatry"
+      - generic [ref=e61]:
+        - button "All" [ref=e62]
+        - button "Cardiology" [ref=e63]
+        - button "Dermatology" [ref=e64]
+        - button "Gastroenterology" [ref=e65]
+        - button "General Medicine" [ref=e66]
+        - button "Gynecology" [ref=e67]
+        - button "Neurology" [ref=e68]
+        - button "Oncology" [ref=e69]
+        - button "Orthopedics" [ref=e70]
+        - button "Pediatrics" [ref=e71]
+        - button "Psychiatry" [ref=e72]
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - paragraph [ref=e76]: Showing 10 doctors
+          - generic [ref=e77]:
+            - img [ref=e78]
+            - combobox [ref=e79]:
+              - 'option "Sort: Top Rated" [selected]'
+              - 'option "Sort: Most Experienced"'
+              - 'option "Sort: Fee (Low → High)"'
+              - 'option "Sort: Fee (High → Low)"'
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e83]:
+                - generic [ref=e85]: C
+                - generic [ref=e86]:
+                  - heading "Dr. Michael Chen" [level=3] [ref=e87]
+                  - generic [ref=e88]: Neurology
+                  - generic [ref=e89]:
+                    - img [ref=e90]
+                    - generic [ref=e92]: "4.9"
+                    - generic [ref=e93]: (15y exp)
+              - generic [ref=e94]:
+                - generic [ref=e95]:
+                  - img [ref=e96]
+                  - generic [ref=e99]: Brain & Spine Center
+                - generic [ref=e100]:
+                  - img [ref=e101]
+                  - generic [ref=e104]: Tue, Thu, Sat
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - paragraph [ref=e107]: Consultation Fee
+                - paragraph [ref=e108]: $200
+              - link "Book Visit" [ref=e109]:
+                - /url: /doctors/2
+                - button "Book Visit" [ref=e110]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e115]: P
+                - generic [ref=e116]:
+                  - heading "Dr. Priya Patel" [level=3] [ref=e117]
+                  - generic [ref=e118]: Pediatrics
+                  - generic [ref=e119]:
+                    - img [ref=e120]
+                    - generic [ref=e122]: "4.9"
+                    - generic [ref=e123]: (11y exp)
+              - generic [ref=e124]:
+                - generic [ref=e125]:
+                  - img [ref=e126]
+                  - generic [ref=e129]: Children's Health Center
+                - generic [ref=e130]:
+                  - img [ref=e131]
+                  - generic [ref=e134]: Mon, Wed, Fri, Sat
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - paragraph [ref=e137]: Consultation Fee
+                - paragraph [ref=e138]: $100
+              - link "Book Visit" [ref=e139]:
+                - /url: /doctors/5
+                - button "Book Visit" [ref=e140]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e145]: J
+                - generic [ref=e146]:
+                  - heading "Dr. Sarah Johnson" [level=3] [ref=e147]
+                  - generic [ref=e148]: Cardiology
+                  - generic [ref=e149]:
+                    - img [ref=e150]
+                    - generic [ref=e152]: "4.8"
+                    - generic [ref=e153]: (12y exp)
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - img [ref=e156]
+                  - generic [ref=e159]: City Heart Hospital
+                - generic [ref=e160]:
+                  - img [ref=e161]
+                  - generic [ref=e164]: Mon, Wed, Fri
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - paragraph [ref=e167]: Consultation Fee
+                - paragraph [ref=e168]: $150
+              - link "Book Visit" [ref=e169]:
+                - /url: /doctors/1
+                - button "Book Visit" [ref=e170]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - generic [ref=e175]: K
+                - generic [ref=e176]:
+                  - heading "Dr. Robert Kim" [level=3] [ref=e177]
+                  - generic [ref=e178]: Oncology
+                  - generic [ref=e179]:
+                    - img [ref=e180]
+                    - generic [ref=e182]: "4.8"
+                    - generic [ref=e183]: (18y exp)
+              - generic [ref=e184]:
+                - generic [ref=e185]:
+                  - img [ref=e186]
+                  - generic [ref=e189]: Cancer Care Hospital
+                - generic [ref=e190]:
+                  - img [ref=e191]
+                  - generic [ref=e194]: Tue, Thu
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - paragraph [ref=e197]: Consultation Fee
+                - paragraph [ref=e198]: $250
+              - link "Book Visit" [ref=e199]:
+                - /url: /doctors/6
+                - button "Book Visit" [ref=e200]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e201]:
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - generic [ref=e205]: F
+                - generic [ref=e206]:
+                  - heading "Dr. Amanda Foster" [level=3] [ref=e207]
+                  - generic [ref=e208]: Psychiatry
+                  - generic [ref=e209]:
+                    - img [ref=e210]
+                    - generic [ref=e212]: "4.8"
+                    - generic [ref=e213]: (14y exp)
+              - generic [ref=e214]:
+                - generic [ref=e215]:
+                  - img [ref=e216]
+                  - generic [ref=e219]: Mind Wellness Clinic
+                - generic [ref=e220]:
+                  - img [ref=e221]
+                  - generic [ref=e224]: Mon, Wed, Thu
+            - generic [ref=e225]:
+              - generic [ref=e226]:
+                - paragraph [ref=e227]: Consultation Fee
+                - paragraph [ref=e228]: $180
+              - link "Book Visit" [ref=e229]:
+                - /url: /doctors/9
+                - button "Book Visit" [ref=e230]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - generic [ref=e235]: R
+                - generic [ref=e236]:
+                  - heading "Dr. Emily Rodriguez" [level=3] [ref=e237]
+                  - generic [ref=e238]: Orthopedics
+                  - generic [ref=e239]:
+                    - img [ref=e240]
+                    - generic [ref=e242]: "4.7"
+                    - generic [ref=e243]: (10y exp)
+              - generic [ref=e244]:
+                - generic [ref=e245]:
+                  - img [ref=e246]
+                  - generic [ref=e249]: Bone & Joint Clinic
+                - generic [ref=e250]:
+                  - img [ref=e251]
+                  - generic [ref=e254]: Mon, Tue, Thu
+            - generic [ref=e255]:
+              - generic [ref=e256]:
+                - paragraph [ref=e257]: Consultation Fee
+                - paragraph [ref=e258]: $175
+              - link "Book Visit" [ref=e259]:
+                - /url: /doctors/3
+                - button "Book Visit" [ref=e260]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - generic [ref=e265]: T
+                - generic [ref=e266]:
+                  - heading "Dr. Lisa Thompson" [level=3] [ref=e267]
+                  - generic [ref=e268]: Gynecology
+                  - generic [ref=e269]:
+                    - img [ref=e270]
+                    - generic [ref=e272]: "4.7"
+                    - generic [ref=e273]: (13y exp)
+              - generic [ref=e274]:
+                - generic [ref=e275]:
+                  - img [ref=e276]
+                  - generic [ref=e279]: Women's Health Clinic
+                - generic [ref=e280]:
+                  - img [ref=e281]
+                  - generic [ref=e284]: Mon, Tue, Wed, Thu, Fri
+            - generic [ref=e285]:
+              - generic [ref=e286]:
+                - paragraph [ref=e287]: Consultation Fee
+                - paragraph [ref=e288]: $130
+              - link "Book Visit" [ref=e289]:
+                - /url: /doctors/7
+                - button "Book Visit" [ref=e290]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - generic [ref=e295]: W
+                - generic [ref=e296]:
+                  - heading "Dr. James Williams" [level=3] [ref=e297]
+                  - generic [ref=e298]: Dermatology
+                  - generic [ref=e299]:
+                    - img [ref=e300]
+                    - generic [ref=e302]: "4.6"
+                    - generic [ref=e303]: (8y exp)
+              - generic [ref=e304]:
+                - generic [ref=e305]:
+                  - img [ref=e306]
+                  - generic [ref=e309]: Skin Care Institute
+                - generic [ref=e310]:
+                  - img [ref=e311]
+                  - generic [ref=e314]: Wed, Fri
+            - generic [ref=e315]:
+              - generic [ref=e316]:
+                - paragraph [ref=e317]: Consultation Fee
+                - paragraph [ref=e318]: $120
+              - link "Book Visit" [ref=e319]:
+                - /url: /doctors/4
+                - button "Book Visit" [ref=e320]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - generic [ref=e323]:
+                - generic [ref=e325]: L
+                - generic [ref=e326]:
+                  - heading "Dr. Thomas Lee" [level=3] [ref=e327]
+                  - generic [ref=e328]: Gastroenterology
+                  - generic [ref=e329]:
+                    - img [ref=e330]
+                    - generic [ref=e332]: "4.6"
+                    - generic [ref=e333]: (16y exp)
+              - generic [ref=e334]:
+                - generic [ref=e335]:
+                  - img [ref=e336]
+                  - generic [ref=e339]: Digestive Health Center
+                - generic [ref=e340]:
+                  - img [ref=e341]
+                  - generic [ref=e344]: Tue, Thu, Fri
+            - generic [ref=e345]:
+              - generic [ref=e346]:
+                - paragraph [ref=e347]: Consultation Fee
+                - paragraph [ref=e348]: $165
+              - link "Book Visit" [ref=e349]:
+                - /url: /doctors/10
+                - button "Book Visit" [ref=e350]:
+                  - text: Book Visit
+                  - img
+          - generic [ref=e351]:
+            - generic [ref=e352]:
+              - generic [ref=e353]:
+                - generic [ref=e355]: M
+                - generic [ref=e356]:
+                  - heading "Dr. David Martinez" [level=3] [ref=e357]
+                  - generic [ref=e358]: General Medicine
+                  - generic [ref=e359]:
+                    - img [ref=e360]
+                    - generic [ref=e362]: "4.5"
+                    - generic [ref=e363]: (9y exp)
+              - generic [ref=e364]:
+                - generic [ref=e365]:
+                  - img [ref=e366]
+                  - generic [ref=e369]: Community Health Center
+                - generic [ref=e370]:
+                  - img [ref=e371]
+                  - generic [ref=e374]: Mon, Tue, Wed, Thu, Fri
+            - generic [ref=e375]:
+              - generic [ref=e376]:
+                - paragraph [ref=e377]: Consultation Fee
+                - paragraph [ref=e378]: $80
+              - link "Book Visit" [ref=e379]:
+                - /url: /doctors/8
+                - button "Book Visit" [ref=e380]:
+                  - text: Book Visit
+                  - img
+    - contentinfo [ref=e381]:
+      - generic [ref=e382]:
+        - generic [ref=e383]:
+          - img [ref=e384]
+          - generic [ref=e387]: MedBook
+          - generic [ref=e388]: © 2026 All rights reserved.
+        - generic [ref=e389]:
+          - link "Privacy" [ref=e390]:
+            - /url: "#"
+          - link "Terms" [ref=e391]:
+            - /url: "#"
+          - link "Contact Support" [ref=e392]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list
+```

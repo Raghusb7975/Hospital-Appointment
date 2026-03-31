@@ -1,0 +1,58 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e6]:
+        - link "MedBook." [ref=e7]:
+          - /url: /
+          - img [ref=e9]
+          - generic [ref=e12]: MedBook.
+        - navigation [ref=e13]:
+          - link "Find Doctors" [ref=e14]:
+            - /url: /doctors
+            - img [ref=e15]
+            - text: Find Doctors
+          - link "Appointments Cart 3" [ref=e19]:
+            - /url: /cart
+            - img [ref=e20]
+            - text: Appointments Cart
+            - generic [ref=e24]: "3"
+          - link "Dashboard" [ref=e25]:
+            - /url: /dashboard
+            - img [ref=e26]
+            - text: Dashboard
+        - generic [ref=e32]:
+          - link "R raghu Patient" [ref=e33]:
+            - /url: /profile
+            - generic [ref=e35]: R
+            - generic [ref=e36]:
+              - generic [ref=e37]: raghu
+              - generic [ref=e38]: Patient
+          - button [ref=e39]:
+            - img
+    - main [ref=e40]:
+      - img [ref=e42]
+    - contentinfo [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - img [ref=e47]
+          - generic [ref=e50]: MedBook
+          - generic [ref=e51]: © 2026 All rights reserved.
+        - generic [ref=e52]:
+          - link "Privacy" [ref=e53]:
+            - /url: "#"
+          - link "Terms" [ref=e54]:
+            - /url: "#"
+          - link "Contact Support" [ref=e55]:
+            - /url: "#"
+  - region "Notifications (F8)":
+    - list [ref=e57]:
+      - listitem [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]: Welcome back!
+          - generic [ref=e61]: You have successfully logged in.
+        - button [ref=e62]:
+          - img [ref=e63]
+```
