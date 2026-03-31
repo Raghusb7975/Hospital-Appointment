@@ -33,6 +33,7 @@ class DetailsPage {
     await this.page.goto('https://medi-schedule--raghubakare143.replit.app/');
   }
 
+  
   async login(email, password) {
     await this.loginBtn.waitFor();
     await this.loginBtn.click();
