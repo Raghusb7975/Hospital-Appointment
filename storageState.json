@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "GAESA",
-      "value": "CpwBMDA4YzE1ZmYwOGE1NjE3M2Y5M2I2NTkyNTA2NWU3NGRjNmJlMGY4YzQ0NDFmNzgyMzE0MDAwNzNhZDMzNDVmODk1YjZiM2RiMmEzZDIwZGVhNjQ3NzQzZGU0MGIxMjk3YmVkZTQ2YzliM2Q2MDgzZTQ5NTc1ZTIwODVmNTk2YjE4YzVhOTIxZDI1NjQwMGI3OTEyNDY5NzAxNTRlEKzLkJTUMw",
+      "value": "CpwBMDA4YzE1ZmYwOGVlMGZjMTk3YTBiMzY1MmI1ZWYyZWUxOTU0MjY4MTgxY2NmZmY4M2E0Nzc5YWI1ZTgzOGIyYmRhZGIzY2MxY2RhNmViNzY3YjljMGQ0YzZlNTdkZDA0MWM5N2E2MGYwMDc5NWJlMzA1YzEzZGEzYmVhMTA2OWNhZTkxN2VjMWJmZTM1NjI0NGU5MDAwZDNhNDFmEOm8sJbUMw",
       "domain": "daily-wage-book-1--vinayksgowda44.replit.app",
       "path": "/",
-      "expires": 1777529449,
+      "expires": 1777534166,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
