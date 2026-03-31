@@ -425,7 +425,7 @@ test('09 testing withput  deetails',async({page})=>
 
 
 
-test.only('test10', async ({ page }) => {
+test('test10', async ({ page }) => {
   await page.goto('https://medi-schedule--raghubakare143.replit.app/login');
   await page.getByRole('textbox', { name: 'Email address' }).click();
   await page.getByRole('textbox', { name: 'Email address' }).fill('raghu01@gmail.com');
