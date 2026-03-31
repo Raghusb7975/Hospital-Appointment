@@ -86,19 +86,18 @@ jobs:
           npm run allure:generate
         else
           mkdir -p allure-report
-          cat > allure-report/index.html <<'EOF'
-          <!doctype html>
-          <html lang="en">
-            <head>
-              <meta charset="UTF-8" />
-              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <title>Allure Report</title>
-            </head>
-            <body>
-              <h1>No Allure results were produced in this run.</h1>
-            </body>
-          </html>
-          EOF
+          printf '%s\n' \
+            '<!doctype html>' \
+            '<html lang="en">' \
+            '  <head>' \
+            '    <meta charset="UTF-8" />' \
+            '    <meta name="viewport" content="width=device-width, initial-scale=1.0" />' \
+            '    <title>Allure Report</title>' \
+            '  </head>' \
+            '  <body>' \
+            '    <h1>No Allure results were produced in this run.</h1>' \
+            '  </body>' \
+            '</html>' > allure-report/index.html
         fi
 
     - name: Upload Allure HTML Report
