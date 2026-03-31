@@ -9,4 +9,3 @@ node_modules/
 /.session/
 /allure-results/
 /allure-report/
-package-lock.json
