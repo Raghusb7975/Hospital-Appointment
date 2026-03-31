@@ -144,81 +144,68 @@ test.beforeEach(async ({ page }) => {
   await dash.goToDashboard();
 });
 
-
-// ✅ 1
 test('TC01 - Dashboard loads successfully', async ({ page }) => {
   const dash = new DashboardPage(page);
   await expect(dash.WelcomeText).toBeVisible();
 });
 
-// ✅ 2
 test('TC02 - User name visible', async ({ page }) => {
   const dash = new DashboardPage(page);
   await expect(dash.userHeading).toBeVisible();
 });
 
-// ✅ 4
 test('TC04 - Completed count visible', async ({ page }) => {
   const dash = new DashboardPage(page);
   await expect(dash.completedCount).toBeVisible();
 });
 
-// ✅ 5
 test('TC05 - Total spent visible', async ({ page }) => {
   const dash = new DashboardPage(page);
   await expect(dash.totalSpent).toBeVisible();
 });
 
-// ✅ 6
 test('TC06 - Navigate to Find Doctor', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.findDoctorBtn.click();
   await expect(page.getByText('Find the Right Doctor')).toBeVisible();
 });
 
-// ✅ 7
 test('TC07 - Open Cart page', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openCart();
   await expect(dash.cartHeading).toBeVisible();
 });
 
-// ✅ 8
 test('TC08 - Empty cart message', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openCart();
   await expect(dash.emptyCartMsg).toBeVisible();
 });
 
-// ✅ 9
 test('TC09 - Navigate back to Dashboard', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openCart();
   await dash.goToDashboard();
-  await expect(dash.WelcomeText).toBeVisible();
+  await expect(dash.elcomeText).toBeVisible();
 });
 
-// ✅ 10
 test('TC10 - Click Upcoming tab', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.upcomingTab.click();
   await expect(page.getByText('My Appointments')).toBeVisible();
 });
 
-// ✅ 11
 test('TC11 - Click Past Records tab', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.pastTab.click();
 });
 
-// ✅ 12
 test('TC12 - View appointment details', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.upcomingTab.click();
   await dash.viewDetailsBtn.first().click();
 });
 
-// ✅ 13
 test('TC13 - Booking confirmation visible', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.upcomingTab.click();
@@ -226,53 +213,51 @@ test('TC13 - Booking confirmation visible', async ({ page }) => {
   await expect(page.getByText('Booking Confirmed')).toBeVisible();
 });
 
-// ✅ 14
+
 test('TC14 - Navigate to profile page', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openProfile();
   await expect(dash.accountHeading).toBeVisible();
 });
 
-// ✅ 15
 test('TC15 - Edit full name field', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openProfile();
   await dash.fullName.fill('Raghu Test');
 });
 
-// ✅ 16
+
 test('TC16 - Enter DOB', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openProfile();
   await dash.dob.fill('2026-03-29');
 });
 
-// ✅ 17
+
 test('TC17 - Enter phone number', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openProfile();
   await dash.phone.fill('9876543210');
 });
 
-// ✅ 18
+
 test('TC18 - Save profile changes', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openProfile();
   await dash.saveBtn.click();
 });
 
-// ✅ 19
+
 test('TC19 - Logout button visible', async ({ page }) => {
   await expect(page.locator('.lucide-log-out')).toBeVisible();
 });
 
-// ✅ 20
 test('TC20 - Dashboard reload stability', async ({ page }) => {
   await page.reload();
   await expect(page.getByText('Welcome back')).toBeVisible();
 });
 
-// ✅ 21
+
 test('TC21 - Multiple navigation stability', async ({ page }) => {
   const dash = new DashboardPage(page);
   await dash.openCart();
@@ -281,3 +266,7 @@ test('TC21 - Multiple navigation stability', async ({ page }) => {
   await dash.goToDashboard();
 });
 
+
+test('TC22 - Verify headings present', async ({ page }) => {
+  await expect(page.getByRole('heading')).toHaveCountGreaterThan(0);
+});
